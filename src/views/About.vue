@@ -1,6 +1,8 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <h2>这是count:{{$store.state.count}} </h2>
+    <h3>这里是吗m1中的con:{{$store.state.m2.con}}</h3>
     <!-- 列表部分 -->
                 <!-- <el-table @sort-change="sortChange"
                   ref="multipleSelection" border :data="valueDryGoodTableData" style="width: 100%">

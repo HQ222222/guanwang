@@ -86,7 +86,7 @@
       </div>
     </div>
 -->
-<div>
+<!-- <div>
     <router-link to="/about">Home</router-link> |
     <router-link to="/nao">闹钟</router-link>
 </div>
@@ -117,93 +117,120 @@
 
     <h1 ref="h1Ele">
       这是h1
-    </h1>
+    </h1> -->
+    <div>
+    <!-- <hq-media></hq-media> -->
+    <wl></wl>
+    </div>
+  </div>
+    <!-- <h2>这是count:{{$store.state.count}}</h2>
+    <el-button type="warning" @click="CountAdd">增加全局count++</el-button>
+    <h2>这里是m1中的con:{{$store.state.m2.con}}</h2>
+    <el-button type="danger" @click="addcon">改变m2中的con++</el-button>
     <Todotitle ref="ho"></Todotitle>
     <button @click="getref"> 获取和h1元素</button>
 
 <div>
-    <!-- <div v-for="(item, index) in list" :key="index" style="">
+     <div v-for="(item, index) in list" :key="index" style="">
         <img v-lazy="gg(src,index+20+item)" style="float:left;height:300px; width:200px;"/>
         <img v-lazy="gg(src,index+10)"
         style="float:right;height:300px;width:200px;" />
     </div> -->
-    <img v-lazy="src" style="height:300px; width:200px;" >
+    <!-- <img v-lazy="src" style="height:300px; width:200px;" >
 </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import Todotitle from './components/Todotitle.vue';
-import Todocontent from './components/Todocontent.vue';
-import Todo from './components/Todo.vue';
+// import Todotitle from './components/Todotitle.vue';
+// import Todocontent from './components/Todocontent.vue';
+// import Todo from './components/Todo.vue';
+// import HqMedia from './hq/hq-media.vue';
+import wl from './hq/wulian.vue';
 
 export default {
+//   data() {
+//     return {
+//       title: '标题1',
+//       contents: ['神舟', '华硕', '联想'],
+//       type: 1,
+//       count: 1,
+//       num3: [
+//         { fruit: '苹果' },
+//         { fruit: '西瓜' },
+//       ],
+//       tt: false,
+//       src: 'https://source.unsplash.com/random',
+//       list: ['神舟', '华硕', '联想', '神舟', '华硕', '联想', '神舟', '华硕', '联想', '神舟', '华硕', '联想'],
+//     };
+//   },
+//   methods: {
+//     removeContent(index) {
+//       this.contents.splice(index, 1);
+//     },
+//     changes() {
+//       // eslint-disable-next-line no-console
+//       console.log(this.type);
+//       this.type = 2;
+//       return this.type + 1;
+//     },
+//     getref() {
+//       // eslint-disable-next-line no-console
+//       console.log(this.$refs.h1Ele.innerText);
+//       this.$refs.h1Ele.style.color = 'red';
+
+  //       // eslint-disable-next-line no-console
+  //       console.log(this.$refs.ho.title);
+  //       // eslint-disable-next-line no-console
+  //       console.log(this.$refs.ho.test);
+  //     },
+  //     gg(u, index) {
+  //       return `${u}?t=${index}`;
+  //     },
+  //     getRandomInt(min, max) {
+  //       const data = Math.floor(Math.random() * (max - min + 1)) + min;
+  //       // eslint-disable-next-line no-console
+  //       console.log(data);
+  //       return data;
+  //     },
+  //     CountAdd() {
+  //       this.$store.dispatch('addcount');
+  //     },
+  //     addcon() {
+  //       this.$store.commit('m2/addm');
+  //     },
+  //   },
+  //   components: {
+  //     Todotitle,
+  //     Todocontent,
+  //     Todo,
+  //     HqMedia,
+  //   },
+  //   filters: {
+  //     articleType(type) {
+  //       let returnValue = false;
+  //       // eslint-disable-next-line default-case
+  //       switch (type) {
+  //         case 2:
+  //           returnValue = '西瓜';
+
+  //           break;
+  //         case 3:
+  //           returnValue = '橘子';
+  //           break;
+  //       }
+  //       return returnValue;
+  //     },
+  //   },
   data() {
     return {
-      title: '标题1',
-      contents: ['神舟', '华硕', '联想'],
-      type: 1,
-      count: 1,
-      num3: [
-        { fruit: '苹果' },
-        { fruit: '西瓜' },
-      ],
-      tt: false,
-      src: 'https://source.unsplash.com/random',
-      list: ['神舟', '华硕', '联想', '神舟', '华硕', '联想', '神舟', '华硕', '联想', '神舟', '华硕', '联想'],
+
     };
   },
-  methods: {
-    removeContent(index) {
-      this.contents.splice(index, 1);
-    },
-    changes() {
-      // eslint-disable-next-line no-console
-      console.log(this.type);
-      this.type = 2;
-      return this.type + 1;
-    },
-    getref() {
-      // eslint-disable-next-line no-console
-      console.log(this.$refs.h1Ele.innerText);
-      this.$refs.h1Ele.style.color = 'red';
-
-      // eslint-disable-next-line no-console
-      console.log(this.$refs.ho.title);
-      // eslint-disable-next-line no-console
-      console.log(this.$refs.ho.test);
-    },
-    gg(u, index) {
-      return `${u}?t=${index}`;
-    },
-    getRandomInt(min, max) {
-      const data = Math.floor(Math.random() * (max - min + 1)) + min;
-      // eslint-disable-next-line no-console
-      console.log(data);
-      return data;
-    },
-  },
   components: {
-    Todotitle,
-    Todocontent,
-    Todo,
+    // HqMedia,
+    wl,
   },
-  filters: {
-    articleType(type) {
-      let returnValue = false;
-      // eslint-disable-next-line default-case
-      switch (type) {
-        case 2:
-          returnValue = '西瓜';
-
-          break;
-        case 3:
-          returnValue = '橘子';
-          break;
-      }
-      return returnValue;
-    },
-  },
-
 };
+
 </script>
