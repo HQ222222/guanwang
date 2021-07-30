@@ -121,6 +121,7 @@
     <div>
     <!-- <hq-media></hq-media> -->
     <wl></wl>
+    <!-- <ld></ld> -->
     </div>
   </div>
     <!-- <h2>这是count:{{$store.state.count}}</h2>
@@ -147,6 +148,7 @@
 // import Todo from './components/Todo.vue';
 // import HqMedia from './hq/hq-media.vue';
 import wl from './hq/wulian.vue';
+// import ld from './hq/lidao.vue';
 
 export default {
 //   data() {
@@ -230,6 +232,7 @@ export default {
   components: {
     // HqMedia,
     wl,
+    // ld,
   },
 };
 

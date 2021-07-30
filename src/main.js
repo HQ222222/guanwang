@@ -1,4 +1,5 @@
 import Vue from 'vue';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'element-ui/lib/theme-chalk/index.css';
 
 import axios from 'axios';
