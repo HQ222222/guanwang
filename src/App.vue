@@ -232,6 +232,7 @@ export default {
   components: {
     // HqMedia,
     wl,
+
     // ld,
   },
 };
